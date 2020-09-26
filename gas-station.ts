@@ -21,8 +21,10 @@ function canCompleteCircuit(gas: number[], cost: number[]): number {
 };
 
 // TEST CASES
-const tests923: number[][][] = [
-    [ [1,2,3,4,5], [3,4,5,1,2] ],
-    [ [2,3,4], [3,4,3] ],
-]
-for (const [gas, cost] of tests923) console.log(canCompleteCircuit(gas, cost))
+(function() {
+    const tests: number[][][] = [
+        [ [1,2,3,4,5], [3,4,5,1,2] ],
+        [ [2,3,4], [3,4,3] ],
+    ]
+    for (const [gas, cost] of tests) console.log(canCompleteCircuit(gas, cost))
+})()

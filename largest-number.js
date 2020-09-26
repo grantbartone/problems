@@ -16,11 +16,13 @@ var largestNumber = function(nums) {
 }
 
  // TEST CASES
-const tests925 = [
-    [5,50,505,51,9,94,90,99,0,0,0],
-    [3,30,34,5,50,505,9,94],
-    [3,30,34,5,9],
-    [10,2],
-    [0,0],
-]
-for (const nums of tests925) console.log(largestNumber(nums))
+(function(){
+    const tests = [
+        [5,50,505,51,9,94,90,99,0,0,0],
+        [3,30,34,5,50,505,9,94],
+        [3,30,34,5,9],
+        [10,2],
+        [0,0],
+    ]
+    for (const nums of tests) console.log(largestNumber(nums))
+})()

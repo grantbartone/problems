@@ -17,8 +17,10 @@ function findTheDifference(s: string, t: string): string {
 };
 
 // TEST CASES
-const tests924: string[][] = [
-    ["abcd", "abcde"],
-    ["aabb", "aabbb"],
-]
-for (const [s, t] of tests924) console.log(findTheDifference(s,t))
+(function() {
+    const tests: string[][] = [
+        ["abcd", "abcde"],
+        ["aabb", "aabbb"],
+    ]
+    for (const [s, t] of tests) console.log(findTheDifference(s,t))
+})()
