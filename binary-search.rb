@@ -1,5 +1,5 @@
-# Biweekly Contest 36 - 1604. Alert Using Same Key-Card Three or More Times in a One Hour Period
-# https://leetcode.com/contest/biweekly-contest-36/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/
+# October Leetcoding Challenge - Day 8 - Binary Search
+# https://leetcode.com/explore/challenge/card/october-leetcoding-challenge/560/week-2-october-8th-october-14th/3488/
 # 
 # @param {Integer[]} nums
 # @param {Integer} target
