@@ -3,7 +3,7 @@
  * https://leetcode.com/explore/challenge/card/october-leetcoding-challenge/563/week-5-october-29th-october-31st/3513/
  * 
  * DP Solution
- * Time: O(N); Space: O(1)
+ * Time: O(N^2); Space: O(N)
  */
 function findNumberOfLIS(nums: number[]): number {
   // Length (len) and Count (cnt) of Longest Increasing Subsequence ending at nums[i]
