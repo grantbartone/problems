@@ -2,7 +2,7 @@
  * November Leetcoding Challenge - Day 3
  * https://leetcode.com/explore/challenge/card/november-leetcoding-challenge/564/week-1-november-1st-november-7th/3518/
  * 
- * Time: O(1); Space: O(N)
+ * Time: O(N); Space: O(1)
  */
 function maxPower(s: string): number {
   let max = 1
