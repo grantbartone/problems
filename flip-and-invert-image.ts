@@ -5,25 +5,20 @@
  * Time: O(N); Space: O(1)
  */
 function flipAndInvertImage(A: number[][]): number[][] {
+  const invert = (num: number): number => num === 1 ? 0 : 1
+
+  // Flip and Invert each row in a single pass
   for (const row of A) {
-    flip(row)
-    invert(row)
+    for (let lo = 0, hi = row.length - 1; lo <= hi; lo += 1, hi -= 1) {
+      const tmp = row[lo]
+      row[lo] = invert(row[hi])
+
+      // Break if it's the middle number of odd-length row, otherwise continue
+      if (lo === hi) break
+      row[hi] = invert(tmp)
+    }
   }
   return A
-}
-
-const flip = (row: number[]): void => {
-  for (let lo = 0, hi = row.length - 1; lo < hi; lo += 1, hi -= 1) {
-    const tmp = row[lo]
-    row[lo] = row[hi]
-    row[hi] = tmp
-  }
-}
-
-const invert = (row: number[]): void => {
-  for (let i = 0; i < row.length; i += 1) {
-    row[i] = row[i] === 1 ? 0 : 1
-  }
 }
 
 
