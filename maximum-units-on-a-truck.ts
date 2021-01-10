@@ -1,3 +1,9 @@
+/**
+ * January 2th Leetcode Contest - 1710. Maximum Units on a Truck
+ * https://leetcode.com/problems/maximum-units-on-a-truck/
+ * 
+ * Time: O(N Log N); Space: O(1)
+ */
 function maximumUnits(boxTypes: number[][], truckSize: number): number {
   boxTypes.sort((a, b) => a[1] === b[1] ? a[0] - b[0] : a[1] - b[1]).reverse()
 
